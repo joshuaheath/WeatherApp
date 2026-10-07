@@ -1,5 +1,6 @@
 package com.example.weatherapp.data
 
+import androidx.annotation.DrawableRes
 import androidx.compose.ui.graphics.vector.ImageVector
 
 data class CurrentWeather(
@@ -8,5 +9,5 @@ data class CurrentWeather(
     val feelsLikeCelsius: Int,
     val windDirection: String,
     val windSpeedKph: Int,
-    val icon: ImageVector
+    @DrawableRes val icon: Int
 )

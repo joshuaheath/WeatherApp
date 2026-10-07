@@ -1,5 +1,6 @@
 package com.example.weatherapp.data
 
+import androidx.annotation.DrawableRes
 import androidx.compose.ui.graphics.vector.ImageVector
 import java.time.LocalDate
 
@@ -12,5 +13,5 @@ data class DailyForecast(
     val rainAmountMM: Double,
     val humidity: Int,
     val windMaxKph: Int,
-    val icon: ImageVector
+    @DrawableRes val icon: Int
 )
