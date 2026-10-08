@@ -4,12 +4,12 @@ import com.example.weatherapp.R
 import java.time.LocalDate
 
 val sampleCurrentWeather = CurrentWeather(
-    weatherType = "Sunny",
+    weatherType = "Cloudy",
     currentCelsius = 20,
     feelsLikeCelsius = 19,
     windDirection = "SW",
     windSpeedKph = 12,
-    icon = R.drawable.ic_clear_day
+    icon = R.drawable.ic_cloudy_day
 )
 
 val sampleForecast = listOf(

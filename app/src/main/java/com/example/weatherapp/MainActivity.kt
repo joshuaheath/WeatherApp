@@ -11,6 +11,10 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.weatherapp.data.sampleCurrentWeather
+import com.example.weatherapp.data.sampleForecast
+import com.example.weatherapp.ui.screens.CurrentWeatherScreen
+import com.example.weatherapp.ui.screens.DailyForecastScreen
 import com.example.weatherapp.ui.theme.WeatherAppTheme
 
 class MainActivity : ComponentActivity() {
@@ -19,16 +23,12 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             WeatherAppTheme {
-                Scaffold( modifier = Modifier.fillMaxSize() ) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
+//                    CurrentWeatherScreen(sampleCurrentWeather)
+                DailyForecastScreen(sampleForecast)
                 }
             }
         }
     }
-}
 
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
