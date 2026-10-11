@@ -13,6 +13,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.weatherapp.data.sampleCurrentWeather
 import com.example.weatherapp.data.sampleForecast
+import com.example.weatherapp.ui.Navigation
 import com.example.weatherapp.ui.screens.CurrentWeatherScreen
 import com.example.weatherapp.ui.screens.DailyForecastScreen
 import com.example.weatherapp.ui.theme.WeatherAppTheme
@@ -24,7 +25,8 @@ class MainActivity : ComponentActivity() {
         setContent {
             WeatherAppTheme {
 //                    CurrentWeatherScreen(sampleCurrentWeather)
-                DailyForecastScreen(sampleForecast)
+//                DailyForecastScreen(sampleForecast)
+                Navigation()
                 }
             }
         }
@@ -38,13 +40,13 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
     )
 }
 
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    WeatherAppTheme {
-        Greeting("Android")
-    }
-}
+//@Preview(showBackground = true)
+//@Composable
+//fun GreetingPreview() {
+//    WeatherAppTheme {
+//        Greeting("Android")
+//    }
+//}
 
 fun createWeatherList(){
 

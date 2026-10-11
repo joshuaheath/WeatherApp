@@ -82,8 +82,6 @@ fun DailyForecastScreen(forecastList: List<DailyForecast>, modifier: Modifier = 
 fun hasPrecipitation(chanceOfPrecipitation: Int): Boolean {
     return chanceOfPrecipitation >= 1
 }
-
-
 //@Preview(showBackground = true)
 //@Composable
 //fun DailyForecastScreenPreview() {
@@ -92,6 +90,3 @@ fun hasPrecipitation(chanceOfPrecipitation: Int): Boolean {
 //    }
 //}
 
-fun DateTimeFormatter(date: LocalDate): String {
-    return "${date.dayOfWeek}, ${date.month} ${date.dayOfMonth}".lowercase(getDefault())
-}
